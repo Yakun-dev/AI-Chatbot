@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #54b0d4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0;
+    background-color: white;
+    height: 100vh;
+}
+
+.title-bar {
+    background: linear-gradient(135deg, #00c6fb, #005bea);
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.title-bar i {
+    font-size: 24px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title-bar h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chat-box {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+    -webkit-overflow-scrolling: touch;
+    background-color: #e3f2fd;
+}
+
+.message-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.user-wrapper {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.ai-wrapper {
+    justify-content: flex-start;
+}
+
+.message-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.message-icon i {
+    font-size: 20px;
+    color: #666;
+}
+
+.message {
+    padding: 12px 16px;
+    border-radius: 15px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background-color: #35f355;
+    color: #333;
+    margin-left: auto;
+}
+
+.ai-message {
+    background-color: white;
+    color: #333;
+    margin-right: auto;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+    display: flex;
+    padding: 15px;
+    background-color: white;
+    border-top: 1px solid #dee2e6;
+    position: sticky;
+    bottom: 0;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 25px;
+    margin-right: 10px;
+    font-size: 16px;
+    background-color: #e8f5e9;
+    transition: background-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    background-color: #c8e6c9;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #daddda;
+    color: rgb(68, 65, 65);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+button:hover {
+    background-color: #5723e7bb;
+    color: rgb(235, 242, 243);
+}
+
+/* スマートフォン向けの調整 */
+@media (max-width: 480px) {
+    .message {
+        max-width: 75%;
+    }
+    
+    .input-container {
+        padding: 10px;
+    }
+    
+    input[type="text"] {
+        padding: 10px;
+    }
+    
+    button {
+        padding: 10px 15px;
+    }
+} 
