@@ -129,7 +129,7 @@ input[type="text"]:focus {
 button {
     padding: 12px 20px;
     background-color: #5723e7bb;
-    color: rgb(68, 65, 65);
+    color: rgb(235, 242, 243);
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -139,7 +139,7 @@ button {
 
 button:hover {
     background-color:#daddda ;
-    color: rgb(235, 242, 243);
+    color: rgb(68, 65, 65);
 }
 
 /* スマートフォン向けの調整 */
