@@ -128,7 +128,7 @@ input[type="text"]:focus {
 
 button {
     padding: 12px 20px;
-    background-color: #daddda;
+    background-color: #5723e7bb;
     color: rgb(68, 65, 65);
     border: none;
     border-radius: 25px;
@@ -138,7 +138,7 @@ button {
 }
 
 button:hover {
-    background-color: #5723e7bb;
+    background-color:#daddda ;
     color: rgb(235, 242, 243);
 }
 
